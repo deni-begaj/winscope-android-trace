@@ -68,24 +68,22 @@ export default {
     checkHorizontal() {
       return this.vertical ? 'dsb-horizontal' : '';
     },
-    vertical() {
-      return this.boundsC.width < this.boundsC.height;
-    },
     sx(sourceCoordinate) {
-      this.vertical = this.boundsC.height < this.boundsC.width;
+      const widthGreaterThanHeight = this.boundsC.width > this.boundsC.height;
 
-      return this.vertical
+      return widthGreaterThanHeight
               ? sourceCoordinate / this.boundsC.width * this.desiredSize.width
               : sourceCoordinate / this.boundsC.width * this.desiredSize.height;
     },
     sy(sourceCoordinate) {
-      this.vertical = this.boundsC.width < this.boundsC.height;
+      const widthSmallerThanHeight = this.boundsC.width < this.boundsC.height;
 
-      return this.vertical
+      return widthSmallerThanHeight
               ? sourceCoordinate / this.boundsC.height * this.desiredSize.width
               : sourceCoordinate / this.boundsC.height * this.desiredSize.height;
     },
     rectToStyle(r) {
+      this.vertical = this.boundsC.width < this.boundsC.height;
       let x = this.sx(r.left);
       let y = this.sy(r.top);
       let w = this.sx(r.right) - this.sx(r.left);

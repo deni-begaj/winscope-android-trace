@@ -404,9 +404,7 @@ jspb.Message.initialize = function(
  * present.
  * @private @const {!Object}
  */
-jspb.Message.EMPTY_LIST_SENTINEL_ = goog.DEBUG && Object.freeze ?
-    Object.freeze([]) :
-    [];
+jspb.Message.EMPTY_LIST_SENTINEL_ = [];
 
 
 /**

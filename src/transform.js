@@ -83,7 +83,7 @@ function transform({obj, kind, name, children, timestamp, rect, bounds, highligh
 		rectResolved.ref = result;
 	}
 
-	return Object.freeze(result);
+	return result;
 }
 
 
