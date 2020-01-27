@@ -118,17 +118,17 @@ export default {
 
       switch(rightAR) {
         case 1:
-          addClass = 'ar-1';
-          break;
+            addClass = 'ar-1';
+            break;
         case 1.777:
-          addClass = this.vertical ? 'ar-2_v' : 'ar-2_h';
-          break;
+            addClass = this.vertical ? 'ar-1-777_v' : 'ar-1-777_h';
+            break;
         case 2:
-          addClass = this.vertical ? 'ar-1-777_v' : 'ar-1-777_h';
-          break;
+            addClass = this.vertical ? 'ar-2_v' : 'ar-2_h';
+            break;
         case 2.111:
-          addClass = this.vertical ? 'ar-2-111_v' : 'ar-2-111_h';
-          break;
+            addClass = this.vertical ? 'ar-2-111_v' : 'ar-2-111_h';
+            break;
         default:
           console.warn('Came to default of switch');
           break;
