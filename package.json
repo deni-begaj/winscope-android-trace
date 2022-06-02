@@ -35,7 +35,7 @@
     "loader-utils": "^1.1.0",
     "local-web-server": "^3.0.7",
     "nodemon": "^1.19.4",
-    "protobufjs": "^6.8.0",
+    "protobufjs": "^6.11.3",
     "style-loader": "1.1.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-jest": "^3.0.5",
